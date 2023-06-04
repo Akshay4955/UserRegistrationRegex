@@ -55,7 +55,7 @@ public class UserValidation
 
     public void PasswordValidation()
     {
-        string passwordPattern = @"^(?=.*[A-Z])[a-zA-Z0-9~!@#$& *-]{8}$";
+        string passwordPattern = @"^(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9~!@#$& *-]{8,}$";
         Regex regexObject = new Regex(passwordPattern);
         Console.WriteLine("Plz enter password for validation");
         string userInput = Console.ReadLine();
