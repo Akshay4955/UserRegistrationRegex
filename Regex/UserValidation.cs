@@ -31,7 +31,7 @@ public class UserValidation
     
     public void EmailValidation()
     {
-        string EmailPattern = @"^[a-z]+([_.-]?[a - zA - Z0 - 9])*[@][a - zA - Z0 - 9]+([.][a - z]{2,3}){1,2}$";
+        string EmailPattern = @"^[a-z]+([+_.-]?[a-zA-Z0-9])*[@][a-zA-Z0-9]+([.][a-z]{2,3}){1,2}$";
         Regex regexObject = new Regex(EmailPattern);
         Console.WriteLine("Plz enter email for validation");
         string userInput = Console.ReadLine();
@@ -39,5 +39,17 @@ public class UserValidation
             Console.WriteLine("Entered email is valid");
         else
             Console.WriteLine("You entered invalid email");
+    }
+
+    public void MobileValidation()
+    {
+        string MobilePattern = @"^(91)[\s][0-9]{10}$";
+        Regex regexObject = new Regex(MobilePattern);
+        Console.WriteLine("Plz enter mobile number for validation");
+        string userInput = Console.ReadLine();
+        if (regexObject.IsMatch(userInput))
+            Console.WriteLine("Entered mobile number is valid");
+        else
+            Console.WriteLine("You entered invalid mobile number");
     }
 }

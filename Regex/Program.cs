@@ -10,6 +10,7 @@ internal class Program
         userValidation.FirstNameValidation();
         userValidation.LastNameValidation();
         userValidation.EmailValidation();
+        userValidation.MobileValidation();
 
     }
 }
