@@ -6,5 +6,8 @@ internal class Program
     {
         Console.WriteLine("Welcome to Regex...!!");
 
+        UserValidation userValidation = new UserValidation();
+        userValidation.FirstNameValidation();
+
     }
 }
