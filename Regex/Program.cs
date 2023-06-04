@@ -11,6 +11,7 @@ internal class Program
         userValidation.LastNameValidation();
         userValidation.EmailValidation();
         userValidation.MobileValidation();
+        userValidation.PasswordValidation();
 
     }
 }

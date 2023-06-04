@@ -6,8 +6,8 @@ public class UserValidation
 {
     public void FirstNameValidation()
     {
-        string FirstNamePattern = @"^[A-Z][a-z]{2,}$";
-        Regex regexObject = new Regex(FirstNamePattern);
+        string firstNamePattern = @"^[A-Z][a-z]{2,}$";
+        Regex regexObject = new Regex(firstNamePattern);
         Console.WriteLine("Plz enter first name for validation");
         string userInput = Console.ReadLine();
         if (regexObject.IsMatch(userInput))
@@ -18,8 +18,8 @@ public class UserValidation
 
     public void LastNameValidation()
     {
-        string LastNamePattern = @"^[A-Z][a-z]{2,}$";
-        Regex regexObject = new Regex(LastNamePattern);
+        string lastNamePattern = @"^[A-Z][a-z]{2,}$";
+        Regex regexObject = new Regex(lastNamePattern);
         Console.WriteLine("Plz enter last name for validation");
         string userInput = Console.ReadLine();
         if (regexObject.IsMatch(userInput))
@@ -31,8 +31,8 @@ public class UserValidation
     
     public void EmailValidation()
     {
-        string EmailPattern = @"^[a-z]+([+_.-]?[a-zA-Z0-9])*[@][a-zA-Z0-9]+([.][a-z]{2,3}){1,2}$";
-        Regex regexObject = new Regex(EmailPattern);
+        string emailPattern = @"^[a-z]+([+_.-]?[a-zA-Z0-9])*[@][a-zA-Z0-9]+([.][a-z]{2,3}){1,2}$";
+        Regex regexObject = new Regex(emailPattern);
         Console.WriteLine("Plz enter email for validation");
         string userInput = Console.ReadLine();
         if (regexObject.IsMatch(userInput))
@@ -43,13 +43,25 @@ public class UserValidation
 
     public void MobileValidation()
     {
-        string MobilePattern = @"^(91)[\s][0-9]{10}$";
-        Regex regexObject = new Regex(MobilePattern);
+        string mobilePattern = @"^(91)[\s][0-9]{10}$";
+        Regex regexObject = new Regex(mobilePattern);
         Console.WriteLine("Plz enter mobile number for validation");
         string userInput = Console.ReadLine();
         if (regexObject.IsMatch(userInput))
             Console.WriteLine("Entered mobile number is valid");
         else
             Console.WriteLine("You entered invalid mobile number");
+    }
+
+    public void PasswordValidation()
+    {
+        string passwordPattern = @"^[a-zA-Z0-9~!@#$& *-]{8}$";
+        Regex regexObject = new Regex(passwordPattern);
+        Console.WriteLine("Plz enter password for validation");
+        string userInput = Console.ReadLine();
+        if (regexObject.IsMatch(userInput))
+            Console.WriteLine("Entered password is valid");
+        else
+            Console.WriteLine("You entered invalid password");
     }
 }
