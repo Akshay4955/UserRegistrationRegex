@@ -27,4 +27,17 @@ public class UserValidation
         else
             Console.WriteLine("You entered invalid last name");
     }
+
+    
+    public void EmailValidation()
+    {
+        string EmailPattern = @"^[a-z]+([_.-]?[a - zA - Z0 - 9])*[@][a - zA - Z0 - 9]+([.][a - z]{2,3}){1,2}$";
+        Regex regexObject = new Regex(EmailPattern);
+        Console.WriteLine("Plz enter email for validation");
+        string userInput = Console.ReadLine();
+        if (regexObject.IsMatch(userInput))
+            Console.WriteLine("Entered email is valid");
+        else
+            Console.WriteLine("You entered invalid email");
+    }
 }

@@ -9,6 +9,7 @@ internal class Program
         UserValidation userValidation = new UserValidation();
         userValidation.FirstNameValidation();
         userValidation.LastNameValidation();
+        userValidation.EmailValidation();
 
     }
 }
