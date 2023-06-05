@@ -64,4 +64,14 @@ public class UserValidation
         else
             Console.WriteLine("You entered invalid password");
     }
+
+    public bool TestEmailValidation(string email)
+    {
+        string emailPattern = @"^[a-z]+([+_.-]?[a-zA-Z0-9])*[@][a-zA-Z0-9]+([.][a-z]{2,3}){1,2}$";
+        Regex regexObject = new Regex(emailPattern);
+        if (regexObject.IsMatch(email))
+            return true;
+        else
+            return false;
+    }
 }
