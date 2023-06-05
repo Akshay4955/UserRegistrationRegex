@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Regex", "Regex\Regex.csproj", "{394B1124-40B5-475F-8A99-CE78184D90EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Regex", "Regex\Regex.csproj", "{394B1124-40B5-475F-8A99-CE78184D90EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProjectForEmailValidation", "TestProjectForEmailValidation\TestProjectForEmailValidation.csproj", "{1FE3DA84-A2AE-40CF-9D4A-4810F79FFE99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{394B1124-40B5-475F-8A99-CE78184D90EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{394B1124-40B5-475F-8A99-CE78184D90EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{394B1124-40B5-475F-8A99-CE78184D90EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FE3DA84-A2AE-40CF-9D4A-4810F79FFE99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FE3DA84-A2AE-40CF-9D4A-4810F79FFE99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FE3DA84-A2AE-40CF-9D4A-4810F79FFE99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FE3DA84-A2AE-40CF-9D4A-4810F79FFE99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
